@@ -19,14 +19,4 @@ $server->register('Market.SubmitLogin',
 		'Sample function to test json encode'
 );
 
-$server->register('Market.GetXMLMenu',
-		array('name'=>'xsd: string'),
-		array('return'=>'xsd: string'),
-		$ns,
-		false,
-		'rpc',
-		'encoded',
-		'Function to return XML menu'
-);
-
 $server->service(file_get_contents('php://input'));
